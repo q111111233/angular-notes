@@ -1,0 +1,8 @@
+<div class="col-md-6" id="scroll">
+  <ul class="list-group">
+    <a class="list-group-item" style="cursor:pointer" *ngFor="let ele of notes; let i=index" (click)="onEditItem(i)" >{{ele.title}} : {{ele.content | Shorten}}</a>
+  </ul>
+</div>
+<div class="col-md-6">
+  <app-notes-content></app-notes-content>
+</div>

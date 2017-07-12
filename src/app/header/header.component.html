@@ -1,0 +1,24 @@
+<nav class="navbar navbar-default navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">&nbsp;
+    </div>
+    <ul class="nav navbar-nav" routerLinkActive="active">
+      <a class="navbar-brand" id="changeColor" routerLink="">Bo's Angular Study Notes</a>
+    </ul>
+    <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+        <li routerLinkActive="active"><a routerLink="/notes">Notes</a></li>
+        <li routerLinkActive="active"><a routerLink="/feature">Features of Angular</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown app" appDropdown>
+          <a style="cursor: pointer;" class="dropdown-toggle" role="button">ToDatabase <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a style="cursor: pointer;" (click)="onSaveData()">Put Data</a></li>
+            <li><a style="cursor: pointer;" (click)="onFetch()">Get Data</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

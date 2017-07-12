@@ -1,0 +1,11 @@
+<div class="row">
+  <div class="col-xs-12">
+    <button class="btn btn-success" (click)="onNewFeature()">New</button>
+  </div>
+</div>
+<hr>
+<div class="row" id="scroll">
+  <div class="col-xs-12">
+<app-feature-content *ngFor="let ele of features, let i = index" [feature] ="ele" [index]="i"></app-feature-content>
+  </div>
+</div>
